@@ -30,8 +30,8 @@ class StudentAdapter(
     override fun onBindViewHolder(holder: StudentViewHolder, position: Int) {
         val student = students[position]
 
-        holder.textStudentName.text = student.studentName
-        holder.textStudentId.text = student.studentId
+        holder.textStudentName.text = student.name
+        holder.textStudentId.text = student.id
 
         holder.imageEdit.setOnClickListener { onEditClick(student) }
         holder.imageRemove.setOnClickListener { onDeleteClick(student) }

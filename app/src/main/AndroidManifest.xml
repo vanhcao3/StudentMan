@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentManRep"
         tools:targetApi="31">
+        <activity android:name=".AddEditStudentActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

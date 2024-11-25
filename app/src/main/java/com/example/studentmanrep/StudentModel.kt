@@ -1,3 +1,12 @@
 package com.example.studentmanrep
 
-data class StudentModel(var studentName: String, var studentId: String)
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class StudentModel(
+    val name: String,
+    val id: String
+) : Parcelable {
+    override fun toString(): String = "$name ($id)"
+}
